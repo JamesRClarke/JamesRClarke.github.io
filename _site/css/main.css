@@ -8134,7 +8134,6 @@ body {
     border: 0.1px #6a6a6a solid;
     cursor: pointer;
     font-size: 0.3em;
-    font-weight: 600;
     letter-spacing: 0.225em;
     line-height: 4em;
     padding: 0 2.75em;
@@ -8164,26 +8163,6 @@ body {
     letter-spacing: 0.1em;
     line-height: 1.5em;
     word-spacing: 0.2em; }
-  body #hero {
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    position: relative; }
-    body #hero .hero-title {
-      font-size: 25px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -55%);
-      padding: 3vh; }
-    body #hero h4 {
-      line-height: 1.2em;
-      word-spacing: 0.15em;
-      letter-spacing: 0.08em;
-      font-size: 1em; }
-    body #hero i {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em; }
   body header {
     position: fixed;
     top: 0;
@@ -8219,7 +8198,7 @@ body {
           font-size: 1em;
           display: none; }
         body header nav ul li a {
-          color: #b99571;
+          color: #323232;
           text-decoration: none;
           font-size: 1.2em; }
         body header nav ul li a:hover {
@@ -8231,6 +8210,48 @@ body {
         font-size: 1.8em;
         margin-left: 0.1em;
         cursor: pointer; }
+  body #hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    body #hero .hero-title {
+      font-size: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      padding: 3vh; }
+    body #hero h4 {
+      line-height: 1.2em;
+      word-spacing: 0.15em;
+      letter-spacing: 0.08em;
+      font-size: 1em; }
+    body #hero p {
+      display: inline-block;
+      vertical-align: middle; }
+    body #hero i {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      font-size: 1.4em;
+      text-decoration: none; }
+    body #hero .options {
+      padding-top: 2em; }
+      body #hero .options i.aboutArrow {
+        top: 0.35em;
+        position: relative;
+        text-decoration: none; }
+      body #hero .options i.workArrow {
+        top: 1.8em;
+        right: 5em;
+        position: relative; }
+      body #hero .options a {
+        color: #b99571; }
+      body #hero .options a:hover {
+        color: #d0d0d0; }
+      body #hero .options p {
+        font-size: 0.9em;
+        padding-right: 0.3em; }
   body section {
     text-align: center; }
     body section h2 {
@@ -8321,7 +8342,8 @@ body {
         padding: 0 2.75em;
         text-transform: uppercase;
         margin-left: 1.3em;
-        margin-top: 2em; }
+        margin-top: 2em;
+        font-weight: bold; }
       body #work div .shadow2 {
         box-shadow: 0 20px 28px black, 0 12px 12px black;
         background: #323232; }
@@ -8344,7 +8366,7 @@ body {
       font-size: 2em;
       color: #b99571; }
     body footer i.fa:hover {
-      color: #d0d0d0;
+      color: red;
       cursor: pointer; }
     body footer i.social {
       padding: 1em; }

@@ -32,7 +32,6 @@ body {
     border: 0.1px darken($font-color,40) solid;
     cursor: pointer;
     font-size: 0.3em;
-    font-weight: 600;
     letter-spacing: 0.225em;
     line-height: 4em;
     padding: 0 2.75em;
@@ -74,40 +73,6 @@ body {
     word-spacing: 0.2em;
   }
 
-  // HERO/LANDING VIEW
-
-  #hero {
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-
-
-    .hero-title {
-      font-size: 25px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -55%);
-      padding: 3vh;
-    }
-
-    h4 {
-      line-height: 1.2em;
-      word-spacing: 0.15em;
-      letter-spacing: 0.08em;
-      font-size: 1em;
-    }
-
-    i {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
-
-
-  }
-
-
   //NAV BAR
 
   header {
@@ -128,6 +93,10 @@ body {
       height: 3.5em;
       a{
         color: $brand-color2;
+      }
+      a:hover {
+        color: $brand;
+        text-decoration: none;
       }
     }
 
@@ -155,14 +124,10 @@ body {
             display: none;
           }
           a {
-            color: $brand-color2;
+            color: $brand-color;
             text-decoration: none;
             @extend .header-styles;
             font-size: 1.2em;
-          }
-          a:hover {
-            color: $font-color;
-            text-decoration: none;
           }
         }
         li.home{
@@ -174,6 +139,79 @@ body {
         }
       }
     }
+  }
+
+
+  // HERO/LANDING VIEW
+
+  #hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+    .hero-title {
+      font-size: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      padding: 3vh;
+    }
+
+    h4 {
+      line-height: 1.2em;
+      word-spacing: 0.15em;
+      letter-spacing: 0.08em;
+      font-size: 1em;
+    }
+
+    p{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    i {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      font-size: 1.4em;
+      text-decoration: none;
+
+    }
+
+    .options {
+      padding-top: 2em;
+
+      i.aboutArrow {
+        top: 0.35em;
+        position: relative;
+        text-decoration: none;
+      }
+
+      i.workArrow {
+        top: 1.8em;
+        right: 5em;
+        position: relative;
+      }
+
+      a {
+          color: $brand-color2;
+      }
+
+      a:hover {
+        color: $font-color;
+      }
+
+
+      p{
+        font-size: 0.9em;
+        padding-right: 0.3em;
+      }
+    }
+
+
+
   }
 
 
@@ -314,6 +352,7 @@ body {
         text-transform: uppercase;
         margin-left: 1.3em;
         margin-top: 2em;
+        font-weight: bold;
       }
 
       .shadow2 {
@@ -353,7 +392,7 @@ body {
     }
 
     i.fa:hover {
-      color: $font-color;
+      color: red;
       cursor: pointer;
     }
 
