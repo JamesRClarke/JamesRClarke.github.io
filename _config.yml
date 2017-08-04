@@ -1,0 +1,61 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: JamesRClarke
+# description:
+# owner:  # or company name
+# first_published: 2017 # if migrating another site, the year of your first publish
+# email:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://JamesRClarke.github.io" # the base hostname & protocol for your site
+# social:
+  # twitter: https://twitter.com/JRaymondClarke
+  # github: https://github.com/JamesRClarke
+  # linkedin-square: https://linkedin.com/in/JamesRClarke
+  # instagram: https://instagram.com/jamesrclarkee
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+# markdown: kramdown
+sass:
+  # loading path from site root
+  # default to _sass
+  # sass_dir: _sass
+
+  # style : nested (default), compact, compressed, expanded
+  #         :nested, :compact, :compressed, :expanded also works
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # on a typical twitter bootstrap stats are :
+  # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
+style: compact

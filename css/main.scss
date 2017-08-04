@@ -1,0 +1,383 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$icon-font-path:      "../fonts/bootstrap/";
+$fa-font-path:        "../fonts/font-awesome/fonts";
+
+@import "bootstrap/bootstrap";
+@import "font-awesome/scss/font-awesome";
+
+
+
+//#7ef6b6  #b99571 #0fabd2 #7fff7f #FFCE75 #e5b969 #b2ffb2 #cbffcb
+//darken(#cbffcb, 10)  lighten(rgb(83,127,175),10)
+$brand-color: darken(#3f3f3f,5);
+$brand-color2: #b99571;
+$brand-inverse: #4a3b2d;
+$font-color: lighten(#6a6a6a,40);
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background: $brand-color;
+  color: $brand-color2;
+
+  em {
+    text-decoration: underline;
+  }
+  .custom-container {
+    margin: 3.3em;
+  }
+  .header-styles {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h1, h2, h3 {
+    @extend .header-styles;
+    margin-top: 0;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    word-spacing: 0.2em;
+  }
+
+  // HERO/LANDING VIEW
+
+  #hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+    .hero-title {
+      font-size: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 3vh;
+    }
+
+    h4 {
+      line-height: 1.2em;
+      word-spacing: 0.15em;
+      letter-spacing: 0.08em;
+      font-size: 1em;
+    }
+    i.social {
+      padding-top: 0.7em;
+      font-size: 1.2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      cursor: pointer;
+    }
+
+
+    .fa-twitter:hover {
+      color: #55acee;
+    }
+    .fa-linkedin:hover {
+      color: #0077b5;
+    }
+    .fa-instagram:hover {
+      color: #c32aa3;
+    }
+    .fa-github:hover {
+      color: white;
+    }
+
+  }
+
+
+  //NAV BAR
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 2em;
+    background-color: rgba(20,20,20,0);
+    transition: background-color 0.2s ease;
+
+
+
+    &.translucent{
+      overflow: hidden;
+      background-color: lighten($brand-color,3);
+      height: 3.5em;
+
+    }
+
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin-top: 0.5em;
+          font-size: 1.1em;
+          word-spacing: 20px;
+          float: right;
+          margin-left: 20px;
+          line-height: 40px;
+          padding-left: 1em;
+
+          &:last-of-type {
+            margin-left: 0;
+          }
+          &:first-of-type {
+            margin-right: 3em;
+          }
+          &.menu {
+            color: $brand-color2;
+            cursor: pointer;
+            font-size: 1em;
+            display: none;
+          }
+          a {
+            color: $brand-color2;
+            text-decoration: none;
+            @extend .header-styles;
+            font-size: 1.2em;
+          }
+          a:hover {
+            color: $font-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+
+  //SECTION STYLES
+  section {
+    text-align: center;
+
+    h2{
+      padding-top: 2em;
+      font-size: 28px;
+    }
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      position: relative;
+    }
+    &:last-of-type {
+      .container {
+        border-bottom: 0;
+      }
+    }
+  }
+
+
+  // THE ABOUT SECTION
+  #about {
+    font-size: 1.1em;
+
+    p {
+      letter-spacing: 0.1em;
+      line-height: 1.3em;
+      word-spacing: 0.2em;
+      margin: 0 auto;
+      color: $font-color;
+    }
+  }
+
+
+
+
+  //THE PROJECTS SECTION
+  #work {
+    background:$brand-color;
+    color: $font-color;
+
+    div {
+      padding: 1em;
+      text-align: center;
+
+      h2{
+        padding: 1.5em;
+        color: $brand-color2;
+
+      }
+
+      .content {
+        padding: 2em;
+
+        h3{
+          padding-top: 2em;
+          padding-bottom: -5em;
+          font-size: 2.3em;
+
+        }
+        p{
+          letter-spacing: 0.1em;
+          line-height: 1.5em;
+        }
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            letter-spacing: 0.2em;
+            line-height: 1.8em;
+          }
+        }
+        #justo {
+          font-family: 'Ubuntu Mono', monospace;
+          font-weight: 900;
+          opacity: 0.7;
+          text-transform: none;
+          color: #8AEC75;
+        }
+        #notitia {
+          font-family: 'Yantramanav', monospace;
+          text-transform: none;
+          color: #FDC848;
+        }
+        #infoGram {
+          font-family: 'Exo', monospace;
+          text-transform: none;
+          color: white;
+        }
+
+      }
+
+
+      h3.technology-title {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+      span {
+        display: block;
+        position: relative;
+        height: 22px;
+        background-color: #ddd;
+        width: 64.93%;
+        margin-left: 19em;
+
+        i {
+          height: 14px;
+          width: 12px;
+          display: inline-block;
+          background-color: #ff5f57;
+          border-radius: 50%;
+          position: absolute;
+          top: 4px;
+          left: 10px;
+        }
+
+        i:nth-child(2) {
+          left: 26px;
+          background-color: #ffbd2e;
+        }
+        i:nth-child(3) {
+          left: 42px;
+          background-color: #28ca41;
+        }
+      }
+
+      button {
+        background-color: $brand-color;
+        color: $font-color;
+        border-radius: 3px;
+        border: 0.1px darken($font-color,40) solid;
+        cursor: pointer;
+        font-size: 0.8em;
+        font-weight: 600;
+        letter-spacing: 0.225em;
+        line-height: 4em;
+        padding: 0 2.75em;
+        text-transform: uppercase;
+        margin-left: 1.3em;
+        margin-top: 2em;
+      }
+      .shadow {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.20), 0 1px 2px rgba(0,0,0,0.50);
+        transition: all 1.5s cubic-bezier(.25,.8,.25,1);
+        color: $font-color;
+        background: $brand-color;
+      }
+
+      .shadow:hover {
+        box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
+        color: darken($brand-color2, 10);
+        background: $brand-color;
+        border: 0.1px lighten($brand-color,10) solid;
+      }
+
+      .shadow2 {
+        box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
+        background: $brand-color;
+      }
+
+      img {
+        height: 80%;
+        width: 65%;
+        z-index: 10;
+
+
+        &:after {
+          content: "";
+          padding-bottom: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  //FOOTER
+  footer {
+    background-color: lighten($brand-color,3);
+    padding: 10px 0;
+    text-align: center;
+    color: $brand-color2;
+
+
+    i.fa {
+      font-size: 1.6em;
+      color: $brand-color2
+    }
+    i.fa:hover {
+      color: $font-color;
+      cursor: pointer;
+    }
+
+  }
+
+
+  //RESPONSIVENESS
+  @media only screen and (max-width: 575px) {
+    #work {
+      .image {
+        margin-bottom: 15px;
+      }
+    }
+
+    header {
+      height: auto;
+      nav {
+        ul {
+          li {
+            float: none;
+            text-align: right;
+            &.menu {
+              display: block;
+            }
+          }
+          .dropdown {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
