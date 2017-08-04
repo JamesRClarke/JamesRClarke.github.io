@@ -91,11 +91,12 @@ body {
       overflow: hidden;
       background-color: lighten($brand-color,3);
       height: 3.5em;
+
       a{
         color: $brand-color2;
       }
       a:hover {
-        color: $brand;
+        color: $font-color;
         text-decoration: none;
       }
     }
