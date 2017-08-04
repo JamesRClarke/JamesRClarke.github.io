@@ -59,6 +59,13 @@ body {
   .custom-container {
     margin: 3.3em;
   }
+
+.customContainerGA {
+  margin-right: 20em;
+  margin-left: 20em;
+  margin-bottom: 2em;
+}
+
   .header-styles {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -239,14 +246,63 @@ body {
 
   // THE ABOUT SECTION
   #about {
-    font-size: 1.1em;
-
+    font-size: 1.4em;
+    height: 95vh;
+    background: lighten($brand-color,7);
+    h2 {
+      color: darken($brand-color2,5);
+      padding-bottom: 0.4em;
+    }
     p {
       letter-spacing: 0.1em;
       line-height: 1.3em;
       word-spacing: 0.2em;
       margin: 0 auto;
-      color: $font-color;
+      color: white;
+    }
+
+    i {
+      color: darken($font-color,30);
+      font-size: 3em;
+      padding: 0.6em;
+    }
+
+    .technoLogos {
+      margin-bottom: 3em;
+    }
+
+    .git:hover {
+      color: #bd2c00;
+    }
+    .gulp:hover {
+      color: #CF4647;
+    }
+    .mongodb:hover {
+      color: #589636;
+    }
+    .javascript:hover {
+      color:  lighten(#caa019,10);
+    }
+    .nodejs:hover {
+      color: #6cc24a;
+    }
+    .angular:hover {
+      color: #b52e31;
+    }
+    .postgres:hover {
+      color: lighten(#0769ad,10);
+    }
+    .ruby-on-rails:hover {
+      color: #cc0000;
+    }
+    .ruby:hover {
+      color: #cc342d;
+    }
+    .sass:hover {
+      color: #c69;
+    }
+    .jquery:hover {
+      color: #0769ad;
     }
   }
 
@@ -262,10 +318,12 @@ body {
       padding: 1em;
       text-align: center;
 
+
+
+
       h2{
         padding: 1.5em;
         color: $brand-color2;
-
       }
 
       .content {
@@ -280,6 +338,7 @@ body {
         p{
           letter-spacing: 0.1em;
           line-height: 1.5em;
+          font-size: 1.2em;
         }
         ul {
           list-style: none;
@@ -288,6 +347,7 @@ body {
           li {
             letter-spacing: 0.2em;
             line-height: 1.8em;
+            font-size: 1em;
           }
         }
         #justo {
@@ -316,37 +376,8 @@ body {
         font-weight: normal;
       }
 
-      span {
-        display: block;
-        position: relative;
-        height: 22px;
-        background-color: #ddd;
-        width: 64.93%;
-        margin-left: 19em;
-
-        i {
-          height: 14px;
-          width: 12px;
-          display: inline-block;
-          background-color: #ff5f57;
-          border-radius: 50%;
-          position: absolute;
-          top: 4px;
-          left: 10px;
-        }
-
-        i:nth-child(2) {
-          left: 26px;
-          background-color: #ffbd2e;
-        }
-        i:nth-child(3) {
-          left: 42px;
-          background-color: #28ca41;
-        }
-      }
-
       button {
-        font-size: 0.8em;
+        font-size: 0.9em;
         letter-spacing: 0.225em;
         line-height: 4em;
         padding: 0 2.75em;
@@ -377,10 +408,10 @@ body {
 
   //FOOTER
   footer {
-    background-color: lighten($brand-color,3);
-    padding: 1.3em;
+    background-color: lighten($brand-color,0);
     text-align: center;
     color: $brand-color2;
+    padding: 2em;
 
     p {
       font-size: 1.5em;
@@ -413,10 +444,6 @@ body {
     i.fa-github:hover {
       color: white;
     }
-
-  }
-
-  #connect {
 
   }
 

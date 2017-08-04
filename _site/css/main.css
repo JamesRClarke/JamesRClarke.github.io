@@ -8154,6 +8154,10 @@ body {
     text-decoration: underline; }
   body .custom-container {
     margin: 3.3em; }
+  body .customContainerGA {
+    margin-right: 20em;
+    margin-left: 20em;
+    margin-bottom: 2em; }
   body .header-styles, body h1, body h2, body h3, body header nav ul li a {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -8264,13 +8268,46 @@ body {
     body section:last-of-type .container {
       border-bottom: 0; }
   body #about {
-    font-size: 1.1em; }
+    font-size: 1.4em;
+    height: 95vh;
+    background: #444444; }
+    body #about h2 {
+      color: #b18860;
+      padding-bottom: 0.4em; }
     body #about p {
       letter-spacing: 0.1em;
       line-height: 1.3em;
       word-spacing: 0.2em;
       margin: 0 auto;
-      color: #d0d0d0; }
+      color: white; }
+    body #about i {
+      color: #848484;
+      font-size: 3em;
+      padding: 0.6em; }
+    body #about .technoLogos {
+      margin-bottom: 3em; }
+    body #about .git:hover {
+      color: #bd2c00; }
+    body #about .gulp:hover {
+      color: #CF4647; }
+    body #about .mongodb:hover {
+      color: #589636; }
+    body #about .javascript:hover {
+      color: #e5bb31; }
+    body #about .nodejs:hover {
+      color: #6cc24a; }
+    body #about .angular:hover {
+      color: #b52e31; }
+    body #about .postgres:hover {
+      color: #0987de; }
+    body #about .ruby-on-rails:hover {
+      color: #cc0000; }
+    body #about .ruby:hover {
+      color: #cc342d; }
+    body #about .sass:hover {
+      color: #c69; }
+    body #about .jquery:hover {
+      color: #0769ad; }
   body #work {
     background: #323232;
     color: #d0d0d0; }
@@ -8288,14 +8325,16 @@ body {
           font-size: 2.3em; }
         body #work div .content p {
           letter-spacing: 0.1em;
-          line-height: 1.5em; }
+          line-height: 1.5em;
+          font-size: 1.2em; }
         body #work div .content ul {
           list-style: none;
           margin: 0;
           padding: 0; }
           body #work div .content ul li {
             letter-spacing: 0.2em;
-            line-height: 1.8em; }
+            line-height: 1.8em;
+            font-size: 1em; }
         body #work div .content #justo {
           font-family: 'Ubuntu Mono', monospace;
           font-weight: 900;
@@ -8313,30 +8352,8 @@ body {
       body #work div h3.technology-title {
         font-size: 1.7em;
         font-weight: normal; }
-      body #work div span {
-        display: block;
-        position: relative;
-        height: 22px;
-        background-color: #ddd;
-        width: 64.93%;
-        margin-left: 19em; }
-        body #work div span i {
-          height: 14px;
-          width: 12px;
-          display: inline-block;
-          background-color: #ff5f57;
-          border-radius: 50%;
-          position: absolute;
-          top: 4px;
-          left: 10px; }
-        body #work div span i:nth-child(2) {
-          left: 26px;
-          background-color: #ffbd2e; }
-        body #work div span i:nth-child(3) {
-          left: 42px;
-          background-color: #28ca41; }
       body #work div button {
-        font-size: 0.8em;
+        font-size: 0.9em;
         letter-spacing: 0.225em;
         line-height: 4em;
         padding: 0 2.75em;
@@ -8356,10 +8373,10 @@ body {
           padding-bottom: 100%;
           display: block; }
   body footer {
-    background-color: #3a3a3a;
-    padding: 1.3em;
+    background-color: #323232;
     text-align: center;
-    color: #b99571; }
+    color: #b99571;
+    padding: 2em; }
     body footer p {
       font-size: 1.5em; }
     body footer i.fa {

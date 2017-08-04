@@ -9,6 +9,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Exo|Karla|Raleway|Ubuntu+Mono|Yantramanav" rel="stylesheet">
 
+    <link rel="stylesheet" href="/font-mfizz/font-mfizz.css">
+
 </head>
 
 
@@ -39,6 +41,8 @@
     <i class="fa fa-handshake-o" aria-hidden="true"></i>
     <h4>A Junior Web Developer based in London and the South East</h4>
 
+
+
     <div class="row options">
       <div class="col-md-6">
         <p>Check out some of my work</p>
@@ -61,11 +65,7 @@
   <div class="custom-container">
     <h2>Work</h2>
     <div class="col-lg-12">
-      <span>
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
+
       <!-- IMAGE -->
       <img class="shadow2" src="images/notitia.png" >
 
@@ -112,11 +112,7 @@
 
     <div class="col-md-12">
       <!-- IMAGE -->
-      <span>
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
+
       <a ui-sref="anagramFalls"><img class="shadow2" src="images/anagramFalls.png"></a>
 
     </div>
@@ -148,11 +144,7 @@
 
 
     <div class="col-md-12">
-      <span>
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
+
       <!-- IMAGE -->
       <a ui-sref="justo"><img class="shadow2" src="images/justo.png"></a>
 
@@ -202,55 +194,53 @@
 
 
 
+    <div class="infoGram">
 
-    <div class="col-md-12">
-      <span>
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-      <!-- IMAGE -->
-      <a ui-sref="infoGram"><img class="shadow2" src="images/infogram.png" ></a>
+
+      <div class="col-md-12">
+
+        <!-- IMAGE -->
+        <a ui-sref="infoGram"><img class="shadow2" src="images/infogram.png" ></a>
+
+      </div>
+
+      <div class="row content">
+        <div class="col-md-6">
+          <h3 id="infoGram">InfoGram</h3>
+          <p> Infogram is an app using the Google Vision API, which would, take the users upload and then give them back information based on picture uploaded, i.e. Golden Gate Bridge would give the user back its location and a filtering system to find key places nearby.</p>
+          <p>This app included CRUD functionality, and was also RESTful. With users being able to log in and register, using comments on other peoples posts</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="technology-title">Technologies Used</h3>
+          <div class="row">
+            <ul class="col-md-6">
+              <li>JavaScript ES6</li>
+              <li>Node.js</li>
+              <li>HTML5</li>
+              <li>Express</li>
+              <li>Google Maps</li>
+              <li>JSON</li>
+              <li>Amazon Web Services (S3)</li>
+            </ul>
+            <ul class="col-md-6">
+              <li>Bulma</li>
+              <li>jQuery</li>
+              <li>Bower</li>
+              <li>SASS</li>
+              <li>Google Vision & </li>
+              <li>Google Places API(s)</li>
+              <li>Gulp</li>
+            </ul>
+
+          </div>
+          <div class="buttons">
+            <a href="https://infogram-app.herokuapp.com/" target="blank"><button type="button" class="shadow">Launch the App</button></a>
+            <a href="https://github.com/JamesRClarke/wdi-ldn-project-1">  <button type="button" class="shadow">View the Code</button></a>
+          </div>
+        </div>
+      </div>
 
     </div>
-
-    <div class="row content">
-      <div class="col-md-6">
-        <h3 id="infoGram">InfoGram</h3>
-        <p> Infogram is an app using the Google Vision API, which would, take the users upload and then give them back information based on picture uploaded, i.e. Golden Gate Bridge would give the user back its location and a filtering system to find key places nearby.</p>
-        <p>This app included CRUD functionality, and was also RESTful. With users being able to log in and register, using comments on other peoples posts</p>
-      </div>
-      <div class="col-md-6">
-        <h3 class="technology-title">Technologies Used</h3>
-        <div class="row">
-          <ul class="col-md-6">
-            <li>JavaScript ES6</li>
-            <li>Node.js</li>
-            <li>HTML5</li>
-            <li>Express</li>
-            <li>Google Maps</li>
-            <li>JSON</li>
-            <li>Amazon Web Services (S3)</li>
-          </ul>
-          <ul class="col-md-6">
-            <li>Bulma</li>
-            <li>jQuery</li>
-            <li>Bower</li>
-            <li>SASS</li>
-            <li>Google Vision & </li>
-            <li>Google Places API(s)</li>
-            <li>Gulp</li>
-          </ul>
-
-        </div>
-        <div class="buttons">
-          <a href="https://infogram-app.herokuapp.com/" target="blank"><button type="button" class="shadow">Launch the App</button></a>
-          <a href="https://github.com/JamesRClarke/wdi-ldn-project-1">  <button type="button" class="shadow">View the Code</button></a>
-        </div>
-      </div>
-    </div>
-
-
 
   </div>
 </section>
@@ -260,17 +250,45 @@
 
 <section id="about">
 
-  <h2>About <em>Me</em></h2>
+  <h2>About  Me</h2>
+
+
+  <!-- In my time there, I not only learnt how to code, but to actually understand what I was doing. -->
+  <div class="row">
+    <div class="customContainerGA">
+      <p>I am a graduate from General Assembly's Web Development Immersive course. A 12-week coding bootcamp as its also known.  The work you see above is what I built in my time there.</p>
+      <p>These are a few of my preffered technologies I learnt whilst on the course...</p>
+    </div>
+    <div class="col-md-12 technoLogos">
+      <i class="icon-git git"></i>
+      <i class="icon-mongodb mongodb"></i>
+      <i class="icon-gulp gulp"></i>
+      <i class="icon-javascript javascript"></i>
+      <i class="icon-nodejs nodejs"></i>
+      <i class="icon-angular angular"></i>
+      <i class="icon-postgres postgres"></i>
+      <i class="icon-ruby-on-rails-alt ruby-on-rails"></i>
+      <i class="icon-sass sass"></i>
+      <i class="icon-ruby ruby"></i>
+      <i class="icon-jquery jquery"></i>
+    </div>
+
+    <div class="customContainerGA">
+      <p>Thanks to General Assembly, I can't stop now, which is a right pain because there are other things I also want to do, but prioriteis right? I'm working on a few side projects at the moment however nothing that speacial. I'm currently teahcing myself React.js, althought getting a little distracted by...</p>
+    </div>
+
+
+  </div>
+
+
   <div class="row custom-container">
 
-    <div class="col-md-4">
-      <h3></h3>
+
+    <div class="col-md-6">
+      <p>Football. Well more specifically, Crystal Palace FC. A season ticket holder who was been there for years now and yes before they were in the Premier Leauge too. When the Palace aren't at home, there is always football to be watched or a game of FIFA to be played.</p>
     </div>
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="col-md-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="col-md-6">
+      <p>The other good reason why I may be a bit distracted would be that I might be in another country. Yes travel! I haven't been to all corners of the world...yet. But one day I'm sure I'll be able to say that I have.</p>
     </div>
   </div>
 
@@ -283,10 +301,10 @@
 <footer id="connect">
   <h3>JAMES RAYMOND CLARKE</h3>
 
-      <i class="fa fa-twitter social" aria-hidden="true"></i>
-      <i class="fa fa-github social" aria-hidden="true"></i>
-      <i class="fa fa-linkedin social" aria-hidden="true"></i>
-      <i class="fa fa-instagram social" aria-hidden="true"></i>
+       <a href="https://twitter.com/JRaymondClarke" target="_blank"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+      <a href="https://github.com/JamesRClarke" target="_blank"><i class="fa fa-github social" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/jamesraymondclarke/" target="_blank"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/jamesrclarkee/" target="_blank"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
 
 
   <p>Contact me</p>
