@@ -8126,6 +8126,31 @@ body {
   font-family: 'Raleway', sans-serif;
   background: #323232;
   color: #b99571; }
+  body button {
+    margin-top: 5em;
+    background-color: #323232;
+    color: #d0d0d0;
+    border-radius: 3px;
+    border: 0.1px #6a6a6a solid;
+    cursor: pointer;
+    font-size: 0.3em;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    line-height: 4em;
+    padding: 0 2.75em;
+    text-transform: uppercase;
+    margin-left: 1.3em;
+    margin-top: 2em; }
+  body .shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: #d0d0d0;
+    background: #323232; }
+  body .shadow:hover {
+    box-shadow: 0 20px 28px black, 0 12px 12px black;
+    color: #a57c52;
+    background: #323232;
+    border: 0.1px #4c4c4c solid; }
   body em {
     text-decoration: underline; }
   body .custom-container {
@@ -8149,15 +8174,19 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -55%);
       padding: 3vh; }
     body #hero h4 {
       line-height: 1.2em;
       word-spacing: 0.15em;
       letter-spacing: 0.08em;
       font-size: 1em; }
+    body #hero i {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; }
     body #hero i.social {
-      padding-top: 0.7em;
+      padding: 0.2em;
+      padding-top: 1.1em;
       font-size: 1.2em;
       margin-left: 3em;
       margin-right: 1em;
@@ -8183,6 +8212,8 @@ body {
       overflow: hidden;
       background-color: #3a3a3a;
       height: 3.5em; }
+      body header.translucent a {
+        color: #b99571; }
     body header nav ul {
       list-style: none;
       padding: 0;
@@ -8203,7 +8234,7 @@ body {
           font-size: 1em;
           display: none; }
         body header nav ul li a {
-          color: #b99571;
+          color: #323232;
           text-decoration: none;
           font-size: 1.2em; }
         body header nav ul li a:hover {
@@ -8213,7 +8244,8 @@ body {
         margin-top: 0.2em;
         float: left;
         font-size: 1.8em;
-        margin-left: 0.1em; }
+        margin-left: 0.1em;
+        cursor: pointer; }
   body section {
     text-align: center; }
     body section h2 {
@@ -8298,29 +8330,13 @@ body {
           left: 42px;
           background-color: #28ca41; }
       body #work div button {
-        background-color: #323232;
-        color: #d0d0d0;
-        border-radius: 3px;
-        border: 0.1px #6a6a6a solid;
-        cursor: pointer;
         font-size: 0.8em;
-        font-weight: 600;
         letter-spacing: 0.225em;
         line-height: 4em;
         padding: 0 2.75em;
         text-transform: uppercase;
         margin-left: 1.3em;
         margin-top: 2em; }
-      body #work div .shadow {
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
-        transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-        color: #d0d0d0;
-        background: #323232; }
-      body #work div .shadow:hover {
-        box-shadow: 0 20px 28px black, 0 12px 12px black;
-        color: #a57c52;
-        background: #323232;
-        border: 0.1px #4c4c4c solid; }
       body #work div .shadow2 {
         box-shadow: 0 20px 28px black, 0 12px 12px black;
         background: #323232; }

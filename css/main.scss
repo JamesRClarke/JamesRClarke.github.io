@@ -24,6 +24,36 @@ body {
   background: $brand-color;
   color: $brand-color2;
 
+  button {
+    margin-top: 5em;
+    background-color: $brand-color;
+    color: $font-color;
+    border-radius: 3px;
+    border: 0.1px darken($font-color,40) solid;
+    cursor: pointer;
+    font-size: 0.3em;
+    font-weight: 600;
+    letter-spacing: 0.225em;
+    line-height: 4em;
+    padding: 0 2.75em;
+    text-transform: uppercase;
+    margin-left: 1.3em;
+    margin-top: 2em;
+  }
+  .shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.20), 0 1px 2px rgba(0,0,0,0.50);
+    transition: all 1.5s cubic-bezier(.25,.8,.25,1);
+    color: $font-color;
+    background: $brand-color;
+  }
+
+  .shadow:hover {
+    box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
+    color: darken($brand-color2, 10);
+    background: $brand-color;
+    border: 0.1px lighten($brand-color,10) solid;
+  }
+
   em {
     text-decoration: underline;
   }
@@ -58,7 +88,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -55%);
       padding: 3vh;
     }
 
@@ -68,8 +98,15 @@ body {
       letter-spacing: 0.08em;
       font-size: 1em;
     }
+
+    i {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+
     i.social {
-      padding-top: 0.7em;
+      padding: 0.2em;
+      padding-top: 1.1em;
       font-size: 1.2em;
       margin-left: 3em;
       margin-right: 1em;
@@ -111,8 +148,10 @@ body {
       overflow: hidden;
       background-color: lighten($brand-color,3);
       height: 3.5em;
-
+      a{
+      color: $brand-color2;
     }
+  }
 
     nav {
       ul {
@@ -138,7 +177,7 @@ body {
             display: none;
           }
           a {
-            color: $brand-color2;
+            color: $brand-color;
             text-decoration: none;
             @extend .header-styles;
             font-size: 1.2em;
@@ -153,6 +192,7 @@ body {
           float: left;
           font-size: 1.8em;
           margin-left: 0.1em;
+          cursor: pointer;
         }
       }
     }
@@ -289,32 +329,13 @@ body {
       }
 
       button {
-        background-color: $brand-color;
-        color: $font-color;
-        border-radius: 3px;
-        border: 0.1px darken($font-color,40) solid;
-        cursor: pointer;
         font-size: 0.8em;
-        font-weight: 600;
         letter-spacing: 0.225em;
         line-height: 4em;
         padding: 0 2.75em;
         text-transform: uppercase;
         margin-left: 1.3em;
         margin-top: 2em;
-      }
-      .shadow {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.20), 0 1px 2px rgba(0,0,0,0.50);
-        transition: all 1.5s cubic-bezier(.25,.8,.25,1);
-        color: $font-color;
-        background: $brand-color;
-      }
-
-      .shadow:hover {
-        box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
-        color: darken($brand-color2, 10);
-        background: $brand-color;
-        border: 0.1px lighten($brand-color,10) solid;
       }
 
       .shadow2 {
@@ -326,7 +347,6 @@ body {
         height: 80%;
         width: 65%;
         z-index: 10;
-
 
         &:after {
           content: "";
