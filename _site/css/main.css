@@ -8121,6 +8121,10 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
 body {
   font-family: 'Karla', sans-serif;
   font-family: 'Raleway', sans-serif;

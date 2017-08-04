@@ -18,11 +18,17 @@ $brand-color2: #b99571;
 $brand-inverse: #4a3b2d;
 $font-color: lighten(#6a6a6a,40);
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   font-family: 'Raleway', sans-serif;
   background: $brand-color;
   color: $brand-color2;
+
 
   button {
     margin-top: 5em;
