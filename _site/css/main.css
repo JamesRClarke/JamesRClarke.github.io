@@ -8195,8 +8195,6 @@ body {
         margin-left: 20px;
         line-height: 40px;
         padding-left: 1em; }
-        body header nav ul li:last-of-type {
-          margin-left: 0; }
         body header nav ul li:first-of-type {
           margin-right: 3em; }
         body header nav ul li.menu {
@@ -8211,6 +8209,11 @@ body {
         body header nav ul li a:hover {
           color: #d0d0d0;
           text-decoration: none; }
+      body header nav ul li.home {
+        margin-top: 0.2em;
+        float: left;
+        font-size: 1.8em;
+        margin-left: 0.1em; }
   body section {
     text-align: center; }
     body section h2 {
