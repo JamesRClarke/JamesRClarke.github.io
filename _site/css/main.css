@@ -8151,7 +8151,7 @@ body {
     background: #323232; }
   body .shadow:hover {
     box-shadow: 0 20px 28px black, 0 12px 12px black;
-    color: #a57c52;
+    color: #b18860;
     background: #323232;
     border: 0.1px #4c4c4c solid; }
   body em {
@@ -8326,7 +8326,8 @@ body {
         body #work div .content h3 {
           padding-top: 2em;
           padding-bottom: -5em;
-          font-size: 2.3em; }
+          font-size: 2.3em;
+          color: #eaeaea; }
         body #work div .content p {
           letter-spacing: 0.1em;
           line-height: 1.5em;
@@ -8338,7 +8339,8 @@ body {
           body #work div .content ul li {
             letter-spacing: 0.2em;
             line-height: 1.8em;
-            font-size: 1em; }
+            font-size: 1.15em;
+            color: #eaeaea; }
         body #work div .content #justo {
           font-family: 'Ubuntu Mono', monospace;
           font-weight: 900;
@@ -8387,7 +8389,7 @@ body {
       font-size: 2em;
       color: #b99571; }
     body footer i.fa:hover {
-      color: red;
+      color: #dd4b39;
       cursor: pointer; }
     body footer i.social {
       padding: 1em; }

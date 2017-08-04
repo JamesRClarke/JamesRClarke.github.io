@@ -54,7 +54,7 @@ body {
 
   .shadow:hover {
     box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
-    color: darken($brand-color2, 10);
+    color: darken($brand-color2, 5);
     background: $brand-color;
     border: 0.1px lighten($brand-color,10) solid;
   }
@@ -339,6 +339,7 @@ body {
           padding-top: 2em;
           padding-bottom: -5em;
           font-size: 2.3em;
+          color: lighten($font-color,10);
 
         }
         p{
@@ -353,7 +354,8 @@ body {
           li {
             letter-spacing: 0.2em;
             line-height: 1.8em;
-            font-size: 1em;
+            font-size: 1.15em;
+            color: lighten($font-color,10);
           }
         }
         #justo {
@@ -430,7 +432,7 @@ body {
     }
 
     i.fa:hover {
-      color: red;
+      color: #dd4b39;
       cursor: pointer;
     }
 
