@@ -104,28 +104,6 @@ body {
       padding-bottom: 0.5em;
     }
 
-    i.social {
-      padding: 0.2em;
-      padding-top: 1.1em;
-      font-size: 1.2em;
-      margin-left: 3em;
-      margin-right: 1em;
-      cursor: pointer;
-    }
-
-
-    .fa-twitter:hover {
-      color: #55acee;
-    }
-    .fa-linkedin:hover {
-      color: #0077b5;
-    }
-    .fa-instagram:hover {
-      color: #c32aa3;
-    }
-    .fa-github:hover {
-      color: white;
-    }
 
   }
 
@@ -149,9 +127,9 @@ body {
       background-color: lighten($brand-color,3);
       height: 3.5em;
       a{
-      color: $brand-color2;
+        color: $brand-color2;
+      }
     }
-  }
 
     nav {
       ul {
@@ -177,7 +155,7 @@ body {
             display: none;
           }
           a {
-            color: $brand-color;
+            color: $brand-color2;
             text-decoration: none;
             @extend .header-styles;
             font-size: 1.2em;
@@ -360,19 +338,45 @@ body {
   //FOOTER
   footer {
     background-color: lighten($brand-color,3);
-    padding: 10px 0;
+    padding: 1.3em;
     text-align: center;
     color: $brand-color2;
 
+    p {
+      font-size: 1.5em;
+    }
+
 
     i.fa {
-      font-size: 1.6em;
+      font-size: 2em;
       color: $brand-color2
     }
+
     i.fa:hover {
       color: $font-color;
       cursor: pointer;
     }
+
+    i.social{
+      padding: 1em;
+    }
+
+    i.fa-twitter:hover {
+      color: #55acee;
+    }
+    i.fa-linkedin:hover {
+      color: #0077b5;
+    }
+    i.fa-instagram:hover {
+      color: #c32aa3;
+    }
+    i.fa-github:hover {
+      color: white;
+    }
+
+  }
+
+  #connect {
 
   }
 
