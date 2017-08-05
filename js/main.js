@@ -1,5 +1,4 @@
 $(() => {
-  console.log('hello world');
 
   $(window).scroll(updateHeader).trigger('scroll');
 
