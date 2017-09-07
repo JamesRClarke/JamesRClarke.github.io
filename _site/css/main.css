@@ -8247,12 +8247,10 @@ body {
       padding-top: 2em; }
       body #hero .options i.aboutArrow {
         top: 0.35em;
-        position: relative;
         text-decoration: none; }
       body #hero .options i.workArrow {
         top: 1.8em;
-        right: 5em;
-        position: relative; }
+        right: 5em; }
       body #hero .options a {
         color: #b99571; }
       body #hero .options a:hover {
