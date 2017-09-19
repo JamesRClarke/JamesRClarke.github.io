@@ -8247,6 +8247,7 @@ body {
       padding-top: 2em; }
       body #hero .options i.aboutArrow {
         top: 0.35em;
+        left: 1em;
         text-decoration: none; }
       body #hero .options i.workArrow {
         top: 1.8em;
@@ -8410,4 +8411,8 @@ body {
         body header nav ul li.menu {
           display: block; }
       body header nav ul .dropdown {
-        display: none; } }
+        display: none; }
+    body #hero {
+      background: red; }
+      body #hero .options {
+        color: red; } }
