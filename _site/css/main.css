@@ -8121,9 +8121,19 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+* {
+  box-sizing: border-box;
+  outline: 0; }
+
 html {
   overflow-y: scroll;
   overflow-x: hidden; }
+
+.modal-content * {
+  margin-top: 30px; }
+.modal-content p {
+  font-size: 1.4em;
+  color: black; }
 
 body {
   font-family: 'Karla', sans-serif;
@@ -8149,7 +8159,8 @@ body {
     transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     color: #d0d0d0;
     background: #323232; }
-  body .shadow:hover {
+  body .shadow:hover,
+  body .shadow:focus {
     box-shadow: 0 20px 28px black, 0 12px 12px black;
     color: #b18860;
     background: #323232;
@@ -8158,10 +8169,6 @@ body {
     text-decoration: underline; }
   body .custom-container {
     margin: 3.3em; }
-  body .customContainerGA {
-    margin-right: 20em;
-    margin-left: 20em;
-    margin-bottom: 2em; }
   body .header-styles, body h1, body h2, body h3, body header nav ul li a {
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -8272,7 +8279,6 @@ body {
       border-bottom: 0; }
   body #about {
     font-size: 1.4em;
-    height: 95vh;
     background: #444444; }
     body #about h2 {
       color: #b6906a;
@@ -8288,7 +8294,13 @@ body {
       font-size: 3em;
       padding: 0.6em; }
     body #about .technoLogos {
-      margin-bottom: 3em; }
+      margin-bottom: 3em;
+      margin-top: 3em;
+      margin-left: 3em;
+      margin-right: 3em; }
+    body #about .personalInfo {
+      margin-bottom: 3em;
+      margin-top: 3em; }
     body #about .git:hover {
       color: #bd2c00; }
     body #about .gulp:hover {
@@ -8400,6 +8412,8 @@ body {
       color: #c32aa3; }
     body footer i.fa-github:hover {
       color: white; }
+    body footer i.fa-bitbucket:hover {
+      color: #7296d2; }
   @media only screen and (max-width: 575px) {
     body #work .image {
       margin-bottom: 15px; }
@@ -8411,8 +8425,4 @@ body {
         body header nav ul li.menu {
           display: block; }
       body header nav ul .dropdown {
-        display: none; }
-    body #hero {
-      background: red; }
-      body #hero .options {
-        color: red; } }
+        display: none; } }

@@ -1,5 +1,7 @@
 $(() => {
 
+
+
   $(window).scroll(updateHeader).trigger('scroll');
 
   function updateHeader () {
@@ -12,6 +14,10 @@ $(() => {
       $('header').removeClass('translucent');
     }
   }
+
+  
+  $('#myModal').modal('show');
+
 
   $('a').on('click', scrollToSection);
 

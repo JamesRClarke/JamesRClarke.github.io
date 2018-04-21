@@ -37,7 +37,23 @@
 </header>
 
 
-      <section id="hero">
+      <div  id="myModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div style="padding:35px;" class="modal-content">
+      <h2>Thanks for visiting my wesbite!</h2>
+
+      <p>My new website is currently in it's design and early build stage and I am very excited about getting this built. (especially as I'm using React.js to do it)!</p>
+
+      <p>Being a busy developer... well a developer, I am working hard to get this up as soon as I can!</p>
+
+      <p>Instead of showing you a blank page with a cool under construction image, I'd rather let you see what is <strong>v.1.0.0</strong>, so when you return for <strong>v.2.0.0</strong> you can see why I'm so excited about it!</p>
+
+      <h3>James R Clarke.</h3>
+    </div>
+  </div>
+</div>
+
+<section id="hero">
   <div class="hero-title">
     <h2>Hello, I'm <strong><em>James Clarke</em></strong></h2>
     <i class="fa fa-handshake-o" aria-hidden="true"></i>
@@ -54,7 +70,7 @@
       <div class="col-md-6">
         <p>Find out more about me   </p>
 
-          <a href="#about"><i class="fa fa-level-down workArrow" aria-hidden="true"></i></a>
+        <a href="#about"><i class="fa fa-arrow-down workArrow" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
@@ -254,12 +270,11 @@
 
 <section id="about">
 
+
   <h2>About  Me</h2>
 
-
-  <!-- In my time there, I not only learnt how to code, but to actually understand what I was doing. -->
-  <div class="row">
-    <div class="customContainerGA">
+  <div class="row" style="padding: 30px;">
+    <div class="col-md-12">
       <p>I am a graduate from General Assembly's Web Development Immersive course. A 12-week coding bootcamp as it's also known.  The work you see above is what I built in my time there.</p>
       <p>These are a few of my preferred technologies I learnt whilst on the course...</p>
     </div>
@@ -277,7 +292,7 @@
       <i title="jQuery" class="icon-jquery jquery"></i>
     </div>
 
-    <div class="customContainerGA">
+    <div class="col-md-12" style="padding: 30px;">
       <p>Thanks to General Assembly, I can't close my laptop, and no not because I'm in an infinite loop on watching Netflix. Still it's a right pain because there are other things I also want to do, but priorities right? I'm working on a side project or two at the moment however nothing that significant. I'm currently teaching myself React.js, although getting a little distracted by...</p>
     </div>
 
@@ -285,34 +300,33 @@
   </div>
 
 
-  <div class="row custom-container">
+  <div class="row " style="padding: 30px;">
 
 
-    <div class="col-md-6">
+    <div class="col-md-6 personalInfo">
       <h3>Football</h3>
       <p>Well more specifically, Crystal Palace FC. A season ticket holder who has been there for years now and yes before they were in the Premier League.</p>
       <p> When the Palace aren't playing at home, there is always football to be watched or a game of FIFA to be won.</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 personalInfo">
       <h3>Travel</h3>
       <p>The other good reason why I'd be a bit distracted, is that I may be in another country eating all their food whilst claiming it's the only way to immerse yourself in their culture.</p>
       <p> I haven't reached all corners of the world yet but I'm sure one day I'll be able to say that I have.</p>
     </div>
+
   </div>
-
-
-
 </section>
 
 
       <!-- FOOTER -->
-<footer id="connect">
+<footer class="row" id="connect">
   <h3>JAMES RAYMOND CLARKE</h3>
 
-       <a href="https://twitter.com/JRaymondClarke" target="_blank"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
-      <a href="https://github.com/JamesRClarke" target="_blank"><i class="fa fa-github social" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/jamesraymondclarke/" target="_blank"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/jamesrclarkee/" target="_blank"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/JRaymondClarke" target="_blank"><i class="fa fa-twitter social" aria-hidden="true"></i></a>
+  <a href="https://github.com/JamesRClarke" target="_blank"><i class="fa fa-github social" aria-hidden="true"></i></a>
+  <a href="https://bitbucket.org/JamesRClarke/" target="_blank"><i class="fa fa-bitbucket social" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/in/jamesraymondclarke/" target="_blank"><i class="fa fa-linkedin social" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/jamesrclarkee/" target="_blank"><i class="fa fa-instagram social" aria-hidden="true"></i></a>
 
 
   <p>Contact me</p>
@@ -324,7 +338,16 @@
       <!-- Scripts -->
 <!-- jQuery -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+<!-- Bootstrap - Latest compiled and minified JavaScript -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 <script src="/js/main.js"></script>
 

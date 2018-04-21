@@ -18,9 +18,25 @@ $brand-color2: #b99571;
 $brand-inverse: #4a3b2d;
 $font-color: lighten(#6a6a6a,40);
 
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.modal-content{
+  * {
+    margin-top: 30px;
+  }
+  p {
+    font-size: 1.4em;
+    color: black;
+  }
+
 }
 
 body {
@@ -52,7 +68,9 @@ body {
     background: $brand-color;
   }
 
-  .shadow:hover {
+  .shadow:hover,
+  .shadow:focus
+   {
     box-shadow: 0 20px 28px rgba(0,0,0,255), 0 12px 12px rgba(0,0,0,255);
     color: darken($brand-color2, 5);
     background: $brand-color;
@@ -65,12 +83,6 @@ body {
   .custom-container {
     margin: 3.3em;
   }
-
-.customContainerGA {
-  margin-right: 20em;
-  margin-left: 20em;
-  margin-bottom: 2em;
-}
 
   .header-styles {
     letter-spacing: 1px;
@@ -210,7 +222,7 @@ body {
       }
 
       a {
-          color: $brand-color2;
+        color: $brand-color2;
       }
 
       a:hover {
@@ -253,8 +265,8 @@ body {
   // THE ABOUT SECTION
   #about {
     font-size: 1.4em;
-    height: 95vh;
     background: lighten($brand-color,7);
+
     h2 {
       color: darken($brand-color2,2);
       padding-bottom: 0.4em;
@@ -275,6 +287,15 @@ body {
 
     .technoLogos {
       margin-bottom: 3em;
+      margin-top: 3em;
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+
+    .personalInfo {
+      margin-bottom: 3em;
+      margin-top: 3em;
+
     }
 
     .git:hover {
@@ -452,6 +473,9 @@ body {
     i.fa-github:hover {
       color: white;
     }
+    i.fa-bitbucket:hover {
+      color: #7296d2;
+    }
 
   }
 
@@ -479,13 +503,6 @@ body {
             display: none;
           }
         }
-      }
-    }
-    #hero {
-      background: red;
-
-      .options {
-        color: red;
       }
     }
   }
